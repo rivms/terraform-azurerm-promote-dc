@@ -17,7 +17,7 @@ resource "azurerm_virtual_machine_extension" "create-active-directory-forest" {
   name                 = "create-active-directory-forest"
   #location             = "${var.location}"
   #resource_group_name  = "${var.resource_group_name}"
-  virtual_machine_name = "${var.vmname}"
+  virtual_machine_id = "${var.vmname}"
   publisher            = "Microsoft.Compute"
   type                 = "CustomScriptExtension"
   type_handler_version = "1.9"
